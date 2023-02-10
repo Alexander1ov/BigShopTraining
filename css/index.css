@@ -76,6 +76,8 @@ select {
     margin: auto;
     width: 1600px;
     height: 1050px;
+    background-color: #ffffff;
+
     position: relative;
 }
 
@@ -93,6 +95,7 @@ select {
     width: 390px;
     height: 130px;
     position: absolute;
+    z-index: 10;
 }
 
 .header-sitename {
@@ -120,7 +123,7 @@ select {
     z-index: 10;
 }
 
-.header-elem-two{
+.header-elem-two {
     top: 165px;
     left: -15px;
     position: absolute;
@@ -171,7 +174,8 @@ select {
     color: #fff;
 
 }
-.header-discount{
+
+.header-discount {
     padding: 10px 0 0 7px;
     width: 200px;
     height: 80px;
@@ -180,14 +184,16 @@ select {
     font-family: "Roboto-Bold";
     font-size: 40px;
 }
-.discount__h3_color_yellow{
+
+.discount__h3_color_yellow {
     color: #fbf934;
 }
-.discount__h3_color_white{
+
+.discount__h3_color_white {
     color: #fff;
 }
 
-.header__button{
+.header__button {
     padding-top: 17px;
     padding-left: 65px;
     display: flex;
@@ -199,8 +205,195 @@ select {
     border-radius: 33px;
     font-family: 'OpenSans-Semibold';
 }
-.header-elem-three{
+
+.header-elem-three {
     right: 0;
-    bottom: 205px; 
+    bottom: 205px;
+    position: absolute;
+}
+
+
+/* main */
+
+/* section receipts */
+.receipts {
+    margin: auto;
+    width: 1600px;
+    height: 1330px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.receipts-elem__fifth {
+    top: 390px;
+    left: 35px;
+    width: 144px;
+
+    position: absolute;
+}
+
+.receipts-wrapper {
+    margin: -30px auto 0;
+    width: 1385px;
+    height: 1300px;
+    background-color: #ffffff;
+    opacity: 1;
+    box-shadow: 0px 10px 40px rgb(126 155 189 / 35%);
+    position: relative;
+    z-index: 20;
+}
+
+.receipts-elem__first {
+    top: 84px;
+    left: 250px;
+    position: absolute;
+}
+
+.receipts-elem__second {
+    top: 50px;
+    left: 820px;
+    position: absolute;
+}
+
+.receipts-elem__third {
+    top: 70px;
+    right: 140px;
+    position: absolute;
+}
+
+.receipts-elem__fourth {
+    top: 520px;
+    right: -50px;
+    position: absolute;
+}
+
+.receipts-elem__six {
+    top: 1150px;
+    left: -50px;
+    position: absolute;
+}
+
+
+.receipts-head {
+    padding: 80px 0;
+    width: 100%;
+    height: 230px;
+    font-family: "OpenSans-Bold";
+    font-size: 50px;
+    color: #333333;
+    text-align: center;
+    position: relative;
+}
+
+.receipts-product {
+    margin: auto;
+    width: 1100px;
+    height: 1000px;
+    background-color: #e7d2d26c;
+    font-family: 'OpenSans-Bold';
+    font-size: 100px;
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+
+}
+
+/* .receipts-arrow{СТРЕЛКИСТРЕЛКИСТРЕЛКИ
+
+} */
+
+.receipts-elem__seventh {
+    right: 60px;
+    bottom: 170px;
+    width: 88px;
+    position: absolute;
+}
+
+/* section ourBrands */
+.ourBrands {
+    margin: auto;
+    width: 1600px;
+    height: 860px;
+    background-color: #ffff;
+    display: flex;
+}
+
+.ourBrands-description {
+    padding: 260px 75px 0 215px;
+    width: 50%;
+    position: relative;
+}
+
+.ourBrands-elem__first {
+    top: 240px;
+    left: 455px;
+    position: absolute;
+}
+
+.ourBrands-elem__second {
+    bottom: 82px;
+    left: 160px;
+    position: absolute;
+}
+
+.ourBrands-description__title {
+    font-family: 'OpenSans-Bold';
+    font-size: 50px;
+    color: #333333;
+}
+
+
+
+.ourBrands-description__subtitle {
+    font-family: 'OpenSans-Regular';
+    font-size: 28px;
+    color: #333333;
+
+
+}
+
+.ourBrands-description__subtitle p {
+    display: inline;
+    color: #8d83f9;
+}
+
+.paragraph {
+    margin-top: 10px;
+    color: #c7c7c7;
+}
+
+
+
+
+
+
+
+
+.ourBrands-phone {
+    width: 50%;
+    position: relative;
+}
+
+.ourBrands-elem__third {
+    top: 0px;
+    right: 140px;
+    width: 500px;
+    position: absolute;
+}
+
+.ourBrands-elem__fourth {
+    top: 124px;
+    left: 100px;
+    position: absolute;
+}
+
+.ourBrands-elem__fifth {
+    top: 490px;
+    right:  172px;
+    width: 47px;
+
     position: absolute;
 }

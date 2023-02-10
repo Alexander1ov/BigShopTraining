@@ -16,3 +16,7 @@
     font-family: "OpenSans-Bold";
     src: url("./OpenSans/OpenSans-Bold.ttf");
 }
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("./OpenSans/OpenSans-Regular.ttf");
+}
