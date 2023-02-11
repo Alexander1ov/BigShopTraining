@@ -18,7 +18,7 @@ h2,
 h3,
 h4,
 p,
-ul[class],
+/* ul[class], */
 ol[class],
 li,
 figure,
@@ -67,6 +67,12 @@ textarea,
 select {
     font: inherit;
 }
+
+/* убираем бордер у инпута, при фокусе */
+input {
+    outline: none;
+}
+
 
 
 /* мои стили */
@@ -135,6 +141,8 @@ select {
     height: 65px;
     margin-left: 140px;
     background-color: #fff;
+    box-shadow: 0px 10px 40px #b39ef1;
+
     border-radius: 33px;
     font-family: 'OpenSans-Semibold';
 }
@@ -202,6 +210,7 @@ select {
     height: 60px;
     border: none;
     background-color: #fff;
+    box-shadow: 0px 10px 40px #bdedfc;
     border-radius: 33px;
     font-family: 'OpenSans-Semibold';
 }
@@ -288,7 +297,7 @@ select {
 .receipts-product {
     margin: auto;
     width: 1100px;
-    height: 1000px;
+    height: 950px;
     background-color: #e7d2d26c;
     font-family: 'OpenSans-Bold';
     font-size: 100px;
@@ -316,7 +325,7 @@ select {
 .ourBrands {
     margin: auto;
     width: 1600px;
-    height: 860px;
+    height: 810px;
     background-color: #ffff;
     display: flex;
 }
@@ -392,8 +401,290 @@ select {
 
 .ourBrands-elem__fifth {
     top: 490px;
-    right:  172px;
+    right: 172px;
     width: 47px;
-
     position: absolute;
+}
+
+
+/* section Showcase */
+
+.showcase {
+    margin: auto;
+    padding-top: 110px;
+    width: 1600px;
+    height: 1280px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.showcase-wrapper {
+    margin: auto;
+    width: 1385px;
+    height: 1300px;
+    background-color: #ffffff;
+    opacity: 1;
+    box-shadow: 0px 10px 40px rgb(126 155 189 / 35%);
+    position: relative;
+    z-index: 20;
+}
+
+.showcase-elem__first {
+    top: 50px;
+    left: 170px;
+    position: absolute;
+}
+
+.showcase-elem__second {
+    top: 253px;
+    left: 130px;
+    position: absolute;
+}
+
+.showcase-elem__third {
+    top: 470px;
+    right: -18px;
+    position: absolute;
+}
+
+.showcase-elem__fourth {
+    top: 930px;
+    left: -60px;
+    position: absolute;
+}
+
+
+.showcase-head {
+    padding: 80px 0;
+    width: 100%;
+    height: 230px;
+    font-family: "OpenSans-Bold";
+    font-size: 50px;
+
+    color: #333333;
+    text-align: center;
+}
+
+.showcase-sorted {
+    margin: auto;
+    padding: 0 100px;
+    width: 1100px;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 10px 40px rgb(126 155 189 / 35%);
+    border-radius: 33px;
+    font-family: 'OpenSans-Semibold';
+}
+
+.showcase-sorted__ul {
+    width: 890px;
+    height: 70px;
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.showcase-sorted__ul li {
+    margin: auto;
+    cursor: pointer;
+    font-family: "OpenSans-Semibold";
+    font-size: 18px;
+}
+
+.showcase-sorted__ul li:hover {
+    color: #b79bfa;
+    text-shadow: -3px 10px 5px #cfbdfac5;
+
+}
+
+.showcase-sorted__ul li:active {
+
+    font-size: 19px;
+    color: #e8ad69;
+    text-shadow: 0px 0px 15px #e8ad69;
+
+
+}
+
+.showcase-product {
+    margin: 100px auto 0;
+    width: 1100px;
+    height: 790px;
+    background-color: #e7d2d26c;
+    font-family: 'OpenSans-Bold';
+    font-size: 100px;
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+
+}
+
+/* .receipts-arrow{СТРЕЛКИСТРЕЛКИСТРЕЛКИ
+
+} */
+
+
+/* mail */
+.mail {
+    margin: auto;
+    width: 1600px;
+    height: 490px;
+    background-image: url('../img/main/mail/backgroundMail.jpg');
+    background-size: cover;
+}
+
+.mail-newsletter {
+    margin: auto;
+    padding-top: 135px;
+    width: 990px;
+    height: 350px;
+    color: #ffffff;
+}
+
+.mail-newsletter__background {
+    font-family: "Roboto-Black";
+    font-size: 150px;
+    opacity: 0.1;
+
+}
+
+.mail-newsletter__text {
+    top: -150px;
+    margin: auto;
+    width: fit-content;
+    font-family: "OpenSans-Bold";
+    font-size: 50px;
+    position: relative;
+}
+
+.mail__form {
+    margin: auto;
+    padding: 0 5px 0 30px;
+    width: 850px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 33px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.mail__form__input_email {
+    width: 72%;
+
+    border: none;
+
+    font-family: "OpenSans-Regular";
+}
+
+.mail__form__input_submit {
+    width: 26%;
+    height: 60px;
+    background-color: #8f7ff8;
+    border: none;
+    border-radius: 33px;
+
+    font-family: 'OpenSans-Semibold';
+}
+
+
+
+
+
+
+.footer {
+    margin: auto;
+    padding-top: 60px;
+    width: 1600px;
+    height: 400px;
+
+    background-color: #ffffff;
+    position: relative;
+}
+
+.footer-header {
+    margin: auto;
+    width: fit-content;
+    font-family: "Roboto-Medium";
+    font-size: 40px;
+    color: #222222;
+}
+
+.footer-assortment {
+    margin: 30px auto 50px;
+    width: 530px;
+    /* height: 70px; */
+    font-family: "OpenSans-Semibold";
+
+    color: #b3b3b3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footer-communication {
+    margin: auto;
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.footer-communication li {
+    padding-top: 13px;
+    width: 55px;
+    height: 55px;
+    border: 2px solid #ecebed;
+    border-radius: 27px;
+    position: relative;
+}
+
+.footer-communication :hover{
+    cursor: pointer;
+    background-color: #e2a66a;
+
+
+}
+
+.footer-communication li img {
+    margin: auto;
+    height: 23px;
+}
+
+.footer-icon__first {
+    background-color: #9970f6;
+}
+
+
+
+.footer-copyright {
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #f6f5f7;
+    position: absolute;
+    display: flex;
+}
+
+.footer-copyright__text {
+    margin: auto;
+    width: fit-content;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    text-align: center;
+    color: #888888;
+   
+
+
+  
 }
