@@ -48,27 +48,25 @@
         </div>
     </header>
 
-
-
     <main class="main">
         <section class="receipts">
             <img class="receipts-elem__fifth" src="./img/main/receipts/receiptsFifthElem.png" alt="">
-            <div class="receipts-wrapper">
+            <div class="receipts-wrapper scroll">
+
                 <img class="receipts-elem__first" src="./img/main/receipts/receiptsFirstElem.png" alt="">
                 <img class="receipts-elem__second" src="./img/main/receipts/receiptsSecondElem.png" alt="">
-
                 <img class="receipts-elem__third" src="./img/main/receipts/receiptsThirdElem.png" alt="">
                 <img class="receipts-elem__fourth" src="./img/main/receipts/receiptsfourthElem.png" alt="">
                 <img class="receipts-elem__six" src="./img/main/receipts/receiptsSixthElem.png" alt="">
 
                 <div class="receipts-head">Trendy Arrivals</div>
-                <div class="receipts-arrow__left"></div>
-                <div class="receipts-product"><em>Здесь
-                        будет слайдер товаров, заполню его через js, ну а
-                        пока тут
-                        пусто)</em>
+
+                <div class="receipts-product">
+                    <div class="product__wrapper"></div>
                 </div>
-                <div class="receipts-arrow__right"></div>
+                <a class="receipts-arrow arrow__prew">&#10094</a>
+                <a class="receipts-arrow arrow__next">&#10095</a>
+                <div class="indicator"> </div>
             </div>
             <img class="receipts-elem__seventh" src="./img/main/receipts/receiptsSeventhElem.png" alt="">
         </section>
@@ -77,6 +75,7 @@
             <div class="ourBrands-description">
                 <img class="ourBrands-elem__first" src="./img/main/ourBrands/ourBrandsFirstElem.png" alt="">
                 <img class="ourBrands-elem__second" src="./img/main/ourBrands/ourBrandsSecondElem.png" alt="">
+
                 <div class="ourBrands-description__title">Our Brands</div>
                 <div class="ourBrands-description__subtitle">
                     Small shoes 2017 new Arrivals mini Messenger <p>Classic Shoes</p>
@@ -91,11 +90,12 @@
                 <img class="ourBrands-elem__fifth" src="./img/main/ourBrands/ourBrandsFifthElem.png" alt="">
         </section>
         <section class="showcase">
-            <div class="showcase-wrapper">
+            <div class="showcase-wrapper scroll">
                 <img class="showcase-elem__first" src="./img/main/showcase/showcaseFirstElem.png" alt="">
                 <img class="showcase-elem__second" src="./img/main/showcase/showcaseSecondElem.png" alt="">
                 <img class="showcase-elem__third" src="./img/main/showcase/showcaseThirdElem.png" alt="">
                 <img class="showcase-elem__fourth" src="./img/main/showcase/showcasefourthElem.png" alt="">
+                
                 <div class="showcase-head">Our Showcase</div>
                 <div class="showcase-sorted">
                     <ul class="showcase-sorted__ul">
@@ -107,9 +107,12 @@
                         <li>Toys</li>
                     </ul>
                 </div>
-                <div class="showcase-arrow__left"></div>
-                <div class="showcase-product"></div>
-                <div class="showcase-arrow__right"></div>
+                <div class="showcase-product">
+                    <div class="product__wrapper"></div>
+                </div>
+                <a class="showcase-arrow arrow__prew">&#10094</a>
+                <a class="showcase-arrow arrow__next">&#10095</a>
+
             </div>
         </section>
         <section class="mail">
@@ -145,15 +148,10 @@
                 © Copyright 2017. Big Shop by Victor Themes<br>Alexander Pervov performed the layout as a practice.
                 February 2023.
             </div>
-
         </div>
     </footer>
 
-
-
-
-
-
+    <script src="./js/storage.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
