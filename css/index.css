@@ -312,7 +312,7 @@ select {
     overflow: hidden;
 
 }
-.product__wrapper{
+.product-wrapper{
     height: 950px;
     display: flex;
     flex-direction: column;
@@ -618,9 +618,12 @@ select {
     font-size: 19px;
     color: #e8ad69;
     text-shadow: 0px 0px 15px #e8ad69;
-
-
 }
+.activate{
+    color: #b79bfa;
+    text-shadow: -3px 10px 5px #cfbdfac5;
+}
+
 .showcase-product {
     margin: 50px auto 0;
     width: 1100px;
@@ -628,8 +631,10 @@ select {
     overflow: hidden;
 
 }
-
-.showcase-product__watch {
+.invisible{
+    display: none;
+}
+.product-wrapper div {
     width: 355px;
     height: 445px;
     background-color: #ffffff;
@@ -640,18 +645,18 @@ select {
     position: relative;
 
 }
-.showcase-product__watch img{
+.product-wrapper div img{
     margin: 20px auto 0;
     width: 80%;
 }
-.showcase-product__watch p {
+
+.product-wrapper div p {
     margin-top: 20px;
     padding: auto;
     width: 100%;
     bottom: 20px;
 }
-
-.showcase-product__watch b {
+.product-wrapper div b {
     font-size: 25px;
     color: #333333;
 }
@@ -844,8 +849,5 @@ select {
     font-size: 15px;
     text-align: center;
     color: #888888;
-
-
-
-
 }
+
