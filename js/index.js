@@ -26,7 +26,6 @@ addProducts(storageFashion, showcaseProduct, showcaseProductFashion);
 addProducts(storageFurnitures, showcaseProduct, showcaseProductFurnitures);
 addProducts(storageToys, showcaseProduct, showcaseProductToy);
 
-
 // Выбор товара по категории
 let assortment = document.querySelector('.showcase-sorted');
 assortment.addEventListener('click', (event) => {
@@ -40,14 +39,11 @@ assortment.addEventListener('click', (event) => {
     let showcaseProductList = showcaseProduct.querySelectorAll('.product-wrapper');
     showcaseProductList.forEach((el)=>{
         el.classList.add('invisible')
-
         if(el.classList.contains(target.dataset.type)){
             el.classList.remove('invisible')
             showProduct(showcaseProduct, el)
         };
     })
-
-
 });
 
 // Слайдер товаров
@@ -91,15 +87,11 @@ function showProduct(location, wrapper) {
             dot[Math.ceil(initialValue / -1065)].style.backgroundColor = '#e8ad69';
         }
     }
-    // if (location.classList.contains('receipts-product')) {
     createDot()
     dot[initialValue / -1065].style.backgroundColor = '#e8ad69';
-    // };
 
     clickArea.addEventListener('click', calcClick);
     clickArea.onselectstart = () => false;
-
-
 }
 
 showProduct(receiptsProduct, receiptsProductBag)

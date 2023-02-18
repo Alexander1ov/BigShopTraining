@@ -84,7 +84,6 @@ select {
     width: 1600px;
     height: 1050px;
     background-color: #ffffff;
-
     position: relative;
 }
 
@@ -106,7 +105,10 @@ select {
 }
 
 .header-sitename {
+    cursor: pointer;
     padding: 80px 0 0 215px;
+    width: fit-content;
+    height: fit-content;
     font-family: 'Roboto-Medium';
     font-size: 40px;
     color: #fff;
@@ -136,39 +138,6 @@ select {
     position: absolute;
 }
 
-.header-nav {
-    display: flex;
-    width: 370px;
-    height: 65px;
-    margin-left: 140px;
-    background-color: #fff;
-    box-shadow: 0px 10px 40px #b39ef1;
-
-    border-radius: 33px;
-    font-family: 'OpenSans-Semibold';
-}
-
-.header-nav__input {
-    width: 185px;
-    padding: 0 20px 0 70px;
-    border-right: 2px solid;
-    border-left: none;
-    border-top: none;
-    border-bottom: none;
-    border-top-left-radius: 35px;
-    border-bottom-left-radius: 35px;
-    background-image: url('../img/header/second/search.png');
-    background-repeat: no-repeat;
-    background-position: 32px 50%;
-}
-
-.header-nav__select {
-    width: 150px;
-    padding: 0 0 0 20px;
-    opacity: 0.55;
-    border: none;
-}
-
 .header-trend {
     padding-top: 200px;
     width: 630px;
@@ -180,7 +149,6 @@ select {
 
 .header-trend__top_color_white {
     color: #fff;
-
 }
 
 .header-discount {
@@ -261,7 +229,6 @@ select {
     box-shadow: 0px 10px 40px rgb(126 155 189 / 35%);
     position: relative;
     z-index: 20;
-
 }
 
 .receipts-elem__first {
@@ -312,7 +279,8 @@ select {
     overflow: hidden;
 
 }
-.product-wrapper{
+
+.product-wrapper {
     height: 950px;
     display: flex;
     flex-direction: column;
@@ -331,12 +299,18 @@ select {
     font-size: 18px;
     color: #929292;
     position: relative;
-
 }
-.receipts-product__bag img{
+
+.receipts-product__bag:hover {
+    border: solid 1px #8d83f9;
+    border-radius: 8px;
+}
+
+.receipts-product__bag img {
     margin: 20px auto 0;
     width: 80%;
 }
+
 .receipts-product__bag p {
     margin-top: 20px;
     padding: auto;
@@ -348,7 +322,6 @@ select {
     font-size: 25px;
     color: #333333;
 }
-
 
 .arrow__prew,
 .arrow__next {
@@ -387,7 +360,6 @@ select {
 }
 
 .dot {
-    /* cursor: pointer; */
     height: 20px;
     width: 20px;
     margin: 30px 20px;
@@ -398,37 +370,12 @@ select {
 
 }
 
-
-/* .dot:hover {
-
-    background-color: #e8ad69;
-    box-shadow: 0px 0px 15px #e8ad69;
-}
-
-.dot:active {
-    box-shadow: 1px 1px 2px #131213, -1px -1px 2px #131213;
-    transition: 0.1s ease;
-} */
-
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .receipts-elem__seventh {
     right: 60px;
@@ -470,14 +417,10 @@ select {
     color: #333333;
 }
 
-
-
 .ourBrands-description__subtitle {
     font-family: 'OpenSans-Regular';
     font-size: 28px;
     color: #333333;
-
-
 }
 
 .ourBrands-description__subtitle p {
@@ -489,13 +432,6 @@ select {
     margin-top: 10px;
     color: #c7c7c7;
 }
-
-
-
-
-
-
-
 
 .ourBrands-phone {
     width: 50%;
@@ -575,7 +511,6 @@ select {
     width: 100%;
     font-family: "OpenSans-Bold";
     font-size: 50px;
-
     color: #333333;
     text-align: center;
 }
@@ -619,7 +554,8 @@ select {
     color: #e8ad69;
     text-shadow: 0px 0px 15px #e8ad69;
 }
-.activate{
+
+.activate {
     color: #b79bfa;
     text-shadow: -3px 10px 5px #cfbdfac5;
 }
@@ -629,11 +565,12 @@ select {
     width: 1100px;
     height: 900px;
     overflow: hidden;
-
 }
-.invisible{
+
+.invisible {
     display: none;
 }
+
 .product-wrapper div {
     width: 355px;
     height: 445px;
@@ -643,9 +580,14 @@ select {
     font-size: 18px;
     color: #929292;
     position: relative;
-
 }
-.product-wrapper div img{
+
+.product-wrapper div:hover {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.product-wrapper div img {
     margin: 20px auto 0;
     width: 80%;
 }
@@ -656,11 +598,11 @@ select {
     width: 100%;
     bottom: 20px;
 }
+
 .product-wrapper div b {
     font-size: 25px;
     color: #333333;
 }
-
 
 
 /* mail */
@@ -711,9 +653,7 @@ select {
 
 .mail__form__input_email {
     width: 72%;
-
     border: none;
-
     font-family: "OpenSans-Regular";
 }
 
@@ -725,7 +665,6 @@ select {
     border-radius: 33px;
     font-family: 'OpenSans-Semibold';
     transition: 0.6s ease;
-
 }
 
 .mail__form__input_submit:hover {
@@ -741,11 +680,6 @@ select {
     transition: none;
 
 }
-
-
-
-
-
 
 .footer {
     margin: auto;
@@ -796,7 +730,6 @@ select {
     flex-wrap: nowrap;
     justify-content: space-between;
     position: relative;
-
 }
 
 .footer-communication li {
@@ -808,7 +741,6 @@ select {
     border-radius: 27px;
     position: relative;
     transition: 0.6s ease;
-
 }
 
 .footer-communication li:hover {
@@ -822,16 +754,12 @@ select {
     background-color: #e8ad69;
     box-shadow: 0px 0px 15px #e8ad69;
     transition: 0.1s ease;
-
 }
 
 .footer-communication li img {
     margin: auto;
     height: 23px;
 }
-
-
-
 
 .footer-copyright {
     bottom: 0;
@@ -850,4 +778,3 @@ select {
     text-align: center;
     color: #888888;
 }
-

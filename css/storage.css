@@ -2,21 +2,20 @@
 
 .storage-products {
     margin: auto;
+    padding: 100px 0;
     width: 1600px;
-    height: 1280px;
+    height: fit-content;
     background-color: #ffffff;
+    position: relative;
 }
 
 .products-wrapper {
-    top: -800px;
     margin: auto;
     width: 1385px;
     height: fit-content;
     background-color: #ffffff;
-    opacity: 0.98;
+    opacity: 1;
     box-shadow: 0px 10px 40px rgb(126 155 189 / 35%);
-    position: relative;
-    z-index: 20;
 }
 
 .products-head {
@@ -24,10 +23,17 @@
     width: 100%;
     font-family: "OpenSans-Bold";
     font-size: 50px;
-
-    color: #333333;
+    color: #f0d263;
+    text-shadow: 3px 3px 10px #333333;
     text-align: center;
 }
+
+.products-head:hover {
+    cursor: pointer;
+    color: #56aef6;
+    text-shadow: 1px 1px 5px #333333;
+}
+
 
 .products-sorted {
     margin: auto;
@@ -69,14 +75,25 @@
     text-shadow: 0px 0px 15px #e8ad69;
 }
 
+.active-li {
+    font-size: 19px;
+    color: #e8ad69;
+    text-shadow: 0px 0px 15px #e8ad69;
+}
 
 .products-layout {
     margin: 50px auto 0;
     width: 1100px;
-    height: 900px;
-    overflow: hidden;
+
 
 }
+
+.layout-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .layout-wrapper div {
     width: 355px;
     height: 445px;
@@ -88,7 +105,15 @@
     position: relative;
 
 }
-.layout-wrapper div img{
+
+.layout-wrapper div:hover {
+    border-radius: 8px;
+    box-shadow: 0px 10px 40px rgb(126 155 189 / 35%);
+    z-index: 10;
+}
+
+
+.layout-wrapper div img {
     margin: 20px auto 0;
     width: 80%;
 }
@@ -99,6 +124,7 @@
     width: 100%;
     bottom: 20px;
 }
+
 .layout-wrapper div b {
     font-size: 25px;
     color: #333333;
